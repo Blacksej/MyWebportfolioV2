@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap');
+
+:root{
+    --white: #ffffff;
+    --body: #545d6d;
+    --dark: #202631;
+    --border-color: rgba(0,0,0,0.10);
+    --border-width: 1px;
+    --border-radius: 30px;
+}
+
+/* reset & helpers */
+body{
+    font-family: "Barlow", sans-serif;
+    line-height: 1.8;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 800;
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+
+a:hover{
+    color: var(--dark);
+
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+/* navbar */
+.navbar{
+    position:absolute;
+    width: 100vw;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.navbar-brand{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.social-links a{
+    width: 36px;
+    height: 36px;
+    background-color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+/* hero */
+#hero{
+    background: url("/img/bgedited2.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* btn */
+
+/* intro */
+
+/* service */
+
+/* work */
+
+/* about */
+
