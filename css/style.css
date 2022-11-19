@@ -16,6 +16,27 @@ body{
     color: var(--body);
 }
 
+.floating-btn{
+    width: 60px;
+    height: 60px;
+    background-color: var(--body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.floating-btn:active{
+    background-color: #ffffff;
+}
+
+
 h1,h2,h3,h4,h5,h6{
     font-weight: 800;
     color: var(--dark);
@@ -77,8 +98,17 @@ section{
 @media (max-width: 992px){
     .navbar{
         background-color: var(--dark);
+        padding-left: 10px;
     }
 }
+
+@media (max-width: 1220px){
+    .navbar .navbar-nav .nav-link{
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+}
+
 
 /* hero */
 #hero{
@@ -100,6 +130,22 @@ section{
 #hero p{
     font-size: 18px;
     max-width: 450px;
+}
+
+@media (max-width: 992px){
+    #hero{
+        background-image: url("/img/phoneBG.jpg");
+    }
+
+    #hero h1,
+#hero p{
+    color: var(--white);
+}
+
+#hero h1{
+    margin-top: 20%;
+    font-weight: 900;
+}
 }
 
 /* btn */
@@ -211,6 +257,14 @@ section{
 .project:hover .image-wrapper img{
     transform: scale(1);
 }
+
+@media (max-width: 990px){
+    .project-spacing{
+        margin-top: 10px;
+    }
+}
+
+
 /* about */
 #about img{
     border-radius: var(--border-radius);
@@ -244,4 +298,37 @@ section{
     font-size: 60px;
     margin-right: 16px;
     color: black;
+}
+
+/* contact */
+#contact form{
+    padding: 32px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+#contact form .form-control{
+    background-color: #f8f8f8;
+    border: transparent;
+    border-radius: var(--border-radius);
+    padding-left: 18px;
+}
+
+#contact form input.form-control{
+    height: 56px;
+}
+
+/* footer */
+.footer-top{
+    padding-bottom: 30px;
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .social-links a{
+    border: var(--border-width) solid var(--border-color);
 }
