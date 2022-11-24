@@ -235,14 +235,23 @@ section{
     margin-top: 24px;
 }
 
+.project .image-wrapper-game
+{
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    height: 80vh;
+    width: 100%;
+}
+
 .project .image-wrapper{
     overflow: hidden;
     border-radius: var(--border-radius);
 }
 
+
 .project .image-wrapper img{
     border-radius: var(--border-radius);
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition: all 0.4s ease;
 }
 
@@ -337,6 +346,18 @@ footer .social-links a{
 
 
 /* media control */
+@media (max-width: 1000px) {
+	.desktopOnly{
+		display:none
+	}
+}
+
+@media (min-width: 1000px) {
+	.mobileOnly{
+		display:none
+	}
+}
+
 @media (max-width: 992px){
     /* HERO MEDIA CONTROL */
     #hero{
